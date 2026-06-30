@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Rangga Andra Dinata</title>
+<meta name="description" content="Dokumentasi proyek dan proses pengembangan karya Rangga Andra Dinata di bidang web development, branding, dan sistem.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/projects.css">
+<style>
+/* Inline safety-net: basic hover + transition guarantee
+   even if external CSS files fail to load for any reason. */
+a, button, .btn, .nav-cta, .work-row, .tool-chip, .link-arrow {
+  transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+}
+.btn-primary:hover { filter: brightness(1.15); transform: translateY(-1px); }
+.btn-outline:hover, .nav-cta:hover { background: rgba(93,111,130,0.15); }
+.work-row:hover { background: rgba(255,255,255,0.03); }
+.tool-chip:hover { transform: translateY(-2px); }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="dot"></span>Rangga.dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hubungi Saya</a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <section class="page-header">
+    <div class="container reveal">
+      <div class="eyebrow"><span class="crescent"></span>Projects</div>
+      <h1 class="section-title" style="font-size:clamp(32px,5vw,52px);">
+        Dokumentasi karya<br>dan proses di baliknya.
+      </h1>
+      <p class="section-lead">Setiap proyek di bawah ini disertai konteks masalah, pendekatan, dan hasil — bukan sekadar tampilan akhir.</p>
+    </div>
+  </section>
+
+  <section class="section projects-section">
+    <div class="container">
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <img src="gambar/coding.jpg" alt="Preview Personal Portfolio Website" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+        </div>
+        <div class="project-info">
+          <span class="work-tag mono">01 / Web Development</span>
+          <h2>Personal Portfolio Website</h2>
+          <p class="project-desc">
+            Website portofolio modern dengan animasi yang halus, desain responsif,
+            dan pengalaman pengguna yang berfokus pada performa serta estetika.
+            Dibangun dari nol menggunakan HTML, CSS, dan JavaScript murni.
+          </p>
+          <div class="project-meta">
+            <div>
+              <span class="meta-label mono">Peran</span>
+              <span>Frontend Developer & Designer</span>
+            </div>
+            <div>
+              <span class="meta-label mono">Stack</span>
+              <span>HTML · CSS · JavaScript</span>
+            </div>
+            <div>
+              <span class="meta-label mono">Status</span>
+              <span>Live</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/B2yon" target="_blank" rel="noopener" class="link-arrow">Source Code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reverse reveal">
+        <div class="project-media">
+          <img src="gambar/logo.png" alt="Preview CSS Club Logo Design" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+        </div>
+        <div class="project-info">
+          <span class="work-tag mono">02 / Branding</span>
+          <h2>CSS Club Logo Design</h2>
+          <p class="project-desc">
+            Perancangan identitas visual minimalis untuk Computer Science Club
+            dengan pendekatan modern dan profesional, mulai dari eksplorasi
+            konsep hingga aset final yang siap digunakan.
+          </p>
+          <div class="project-meta">
+            <div>
+              <span class="meta-label mono">Peran</span>
+              <span>Visual Designer</span>
+            </div>
+            <div>
+              <span class="meta-label mono">Stack</span>
+              <span>Figma · Visual Identity</span>
+            </div>
+            <div>
+              <span class="meta-label mono">Status</span>
+              <span>Selesai</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <img src="gambar/project54.png" alt="Preview Canva/Adobe Photoshop Design" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+        </div>
+        <div class="project-info">
+          <span class="work-tag mono">03 / Graphic Design</span>
+          <h2>Canva/Adobe Photoshop Designer</h2>
+          <p class="project-desc">
+            Mendesign Dan Mengedit Gambar Hingga Menciptakan Gambar Yang Menarik Dan 
+            Menyampaikan Pesan Yang Mendalam 
+          </p>
+          <div class="project-meta">
+            <div>
+              <span class="meta-label mono">Peran</span>
+              <span>Graphic Designer</span>
+            </div>
+            <div>
+              <span class="meta-label mono">Stack</span>
+              <span>Canva · Adobe Photoshop</span>
+            </div>
+            <div>
+              <span class="meta-label mono">Status</span>
+              <span>Eksplorasi berkelanjutan</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container cta-box reveal">
+      <div>
+        <h2 class="section-title">Tertarik membangun<br>sesuatu bersama?</h2>
+        <p class="section-lead">Saya senang mendengar tentang proyek baru.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Mulai Percakapan →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-text">© 2026 Rangga Andra Dinata. Dibangun dengan ketenangan.</span>
+    <div class="footer-socials">
+      <a href="contact.html">Email</a>
+      <a href="https://github.com/B2yon" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/rangga-undefined-b44549387" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/choppeduser0" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

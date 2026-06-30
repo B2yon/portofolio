@@ -1,0 +1,126 @@
+.about-header-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.about-photo-wrap { display: flex; justify-content: center; }
+
+.about-photo {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4/5;
+  border-radius: 16px;
+  background: linear-gradient(160deg, var(--bg-tertiary), var(--bg-secondary));
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 800px) {
+  .about-header-grid { grid-template-columns: 1fr; }
+  .about-photo-wrap { order: -1; }
+  .about-photo { max-width: 220px; }
+}
+
+/* Story */
+.story-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 64px;
+}
+
+.story-text p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 16.5px;
+}
+
+.story-text p:last-child { margin-bottom: 0; }
+
+@media (max-width: 800px) {
+  .story-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* Values */
+.values-section { background: var(--bg-secondary); border-radius: 20px; }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.value-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 32px;
+}
+
+.value-mark {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--accent-strong);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.value-card h3 {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .values-grid { grid-template-columns: 1fr; }
+}
+
+/* Interests */
+.interests-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.interest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.interest-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.interest-list li:last-child { border-bottom: 1px solid var(--border-subtle); }
+
+.interest-list li span {
+  color: var(--text-dim);
+  font-size: 13px;
+  width: 24px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+  .interests-grid { grid-template-columns: 1fr; gap: 28px; }
+}

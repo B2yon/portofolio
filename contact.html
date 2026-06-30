@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Rangga Andra Dinata</title>
+<meta name="description" content="Hubungi Rangga Andra Dinata melalui email atau media sosial untuk peluang kerja sama.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+<style>
+/* Inline safety-net: basic hover + transition guarantee
+   even if external CSS files fail to load for any reason. */
+a, button, .btn, .nav-cta, .work-row, .tool-chip, .link-arrow {
+  transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+}
+.btn-primary:hover { filter: brightness(1.15); transform: translateY(-1px); }
+.btn-outline:hover, .nav-cta:hover { background: rgba(93,111,130,0.15); }
+.work-row:hover { background: rgba(255,255,255,0.03); }
+.tool-chip:hover { transform: translateY(-2px); }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="dot"></span>Rangga.dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hubungi Saya</a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <section class="page-header">
+    <div class="container reveal">
+      <div class="eyebrow"><span class="crescent"></span>Contact</div>
+      <h1 class="section-title" style="font-size:clamp(32px,5vw,52px);">
+        Punya ide proyek?<br>Mari mulai percakapan.
+      </h1>
+      <p class="section-lead">Isi formulir di samping, atau hubungi saya langsung lewat email maupun media sosial.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container contact-grid">
+
+      <div class="contact-info reveal">
+        <div class="info-block">
+          <span class="info-label mono">Email</span>
+          <a href="mailto:Ranggaandra67@gmail.com" class="info-value">Ranggaandra67@gmail.com</a>
+        </div>
+        <div class="info-block">
+          <span class="info-label mono">Lokasi</span>
+          <span class="info-value">Tabanan, Bali — Indonesia</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label mono">Ketersediaan</span>
+          <span class="info-value">Terbuka untuk proyek baru, 2026</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label mono">Media Sosial</span>
+          <div class="social-links">
+            <a href="https://github.com/B2yon" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/rangga-undefined-b44549387" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://www.instagram.com/choppeduser0" target="_blank" rel="noopener">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal">
+        <div class="form-row">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+        </div>
+        <div class="form-row">
+          <label for="subject">Subjek</label>
+          <input type="text" id="subject" name="subject" placeholder="Tentang apa pesan ini?" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang proyek atau ide Anda..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Kirim Pesan →</button>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-text">© 2026 Rangga Andra Dinata. Dibangun dengan ketenangan.</span>
+    <div class="footer-socials">
+      <a href="contact.html">Email</a>
+      <a href="https://github.com/B2yon" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/rangga-undefined-b44549387" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/choppeduser0" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

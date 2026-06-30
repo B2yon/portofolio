@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rangga Andra Dinata — Frontend Developer & UI/UX Designer</title>
+<meta name="description" content="Portfolio pribadi Rangga Andra Dinata: Frontend Developer, UI/UX Designer, Photo & Video Editor, dan Photographer berbasis di Tabanan, Bali.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<style>
+/* Inline safety-net: basic hover + transition guarantee
+   even if external CSS files fail to load for any reason. */
+a, button, .btn, .nav-cta, .work-row, .tool-chip, .link-arrow {
+  transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+}
+.btn-primary:hover { filter: brightness(1.15); transform: translateY(-1px); }
+.btn-outline:hover, .nav-cta:hover { background: rgba(93,111,130,0.15); }
+.work-row:hover { background: rgba(255,255,255,0.03); }
+.tool-chip:hover { transform: translateY(-2px); }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="dot"></span>Rangga.dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hubungi Saya</a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="eyebrow"><span class="crescent"></span>Frontend Developer · UI/UX Designer</div>
+      <h1 class="hero-title">
+        Merancang karya digital<br>
+        yang <span class="hero-accent">indah dipandang,</span><br>
+        matang di setiap detail.
+      </h1>
+      <p class="hero-lead">
+        Saya Rangga Andra Dinata — membangun antarmuka web, merancang pengalaman pengguna,
+        dan mengolah visual lewat fotografi serta video, dengan perhatian penuh pada detail kecil.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">Lihat Proyek →</a>
+        <a href="about.html" class="btn btn-outline">Kenali Saya</a>
+      </div>
+      <div class="hero-meta mono">
+        <span>Berbasis di Tabanan, Bali</span>
+        <span class="sep">/</span>
+        <span>Tersedia untuk kolaborasi 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP: quick facts -->
+  <section class="strip">
+    <div class="container strip-grid reveal">
+      <div class="strip-item">
+        <span class="strip-num mono">06</span>
+        <span class="strip-label">Bidang keahlian</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-num mono">10+</span>
+        <span class="strip-label">Tools dikuasai</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-num mono">3+</span>
+        <span class="strip-label">Proyek dikerjakan</span>
+      </div>
+      <div class="strip-item">
+        <span class="strip-num mono">∞</span>
+        <span class="strip-label">Rasa ingin tahu</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container intro-grid">
+      <div class="reveal">
+        <div class="eyebrow"><span class="crescent"></span>Tentang Singkat</div>
+        <h2 class="section-title">Berangkat dari rasa<br>ingin tahu, bukan template.</h2>
+      </div>
+      <div class="reveal">
+        <p class="section-lead" style="max-width:none;">
+          Saya seorang pelajar dengan minat besar pada pengembangan web, desain antarmuka,
+          fotografi, serta produksi konten visual. Di luar itu, saya juga senang mendalami
+          optimasi sistem komputer dan modifikasi Android — perpaduan teknologi dan
+          kreativitas yang menjadi fondasi setiap karya yang saya buat.
+        </p>
+        <a href="about.html" class="link-arrow">Baca cerita lengkap →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow"><span class="crescent"></span>Karya Pilihan</div>
+          <h2 class="section-title">Proyek yang paling<br>mewakili cara saya bekerja.</h2>
+        </div>
+        <a href="projects.html" class="link-arrow">Lihat semua proyek →</a>
+      </div>
+
+      <div class="work-list">
+        <a href="projects.html" class="work-row reveal">
+          <div class="work-row-left">
+            <span class="work-tag mono">01 / Web Development</span>
+            <h3>Personal Portfolio Website</h3>
+          </div>
+          <div class="work-row-right">
+            <span class="work-stack mono">HTML · CSS · JavaScript</span>
+            <span class="work-arrow">↗</span>
+          </div>
+        </a>
+        <a href="projects.html" class="work-row reveal">
+          <div class="work-row-left">
+            <span class="work-tag mono">02 / Branding</span>
+            <h3>CSS Club Logo Design</h3>
+          </div>
+          <div class="work-row-right">
+            <span class="work-stack mono">Figma · Visual Identity</span>
+            <span class="work-arrow">↗</span>
+          </div>
+        </a>
+        <a href="projects.html" class="work-row reveal">
+          <div class="work-row-left">
+            <span class="work-tag mono">03 / Graphic Design</span>
+            <h3>Canva/Adobe Photoshop Designer</h3>
+          </div>
+          <div class="work-row-right">
+            <span class="work-stack mono">Canva · Adobe Photoshop</span>
+            <span class="work-arrow">↗</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container cta-box reveal">
+      <div>
+        <h2 class="section-title">Punya proyek<br>dalam pikiran?</h2>
+        <p class="section-lead">Mari diskusikan bagaimana saya bisa membantu mewujudkannya.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Mulai Percakapan →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-text">© 2026 Rangga Andra Dinata. Dibangun dengan ketenangan.</span>
+    <div class="footer-socials">
+      <a href="contact.html">Email</a>
+      <a href="https://github.com/B2yon" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/rangga-undefined-b44549387" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/choppeduser0" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
